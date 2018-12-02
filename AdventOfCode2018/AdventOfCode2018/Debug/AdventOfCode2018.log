@@ -1,5 +1,0 @@
-﻿  SecondDecember.cpp
-d:\visual studio project\adventofcode\advent-of-code\adventofcode2018\adventofcode2018\seconddecember.cpp(26): warning C4018: '<=': signed/unsigned mismatch
-d:\visual studio project\adventofcode\advent-of-code\adventofcode2018\adventofcode2018\seconddecember.cpp(66): warning C4018: '<': signed/unsigned mismatch
-d:\visual studio project\adventofcode\advent-of-code\adventofcode2018\adventofcode2018\seconddecember.cpp(89): warning C4018: '<': signed/unsigned mismatch
-  AdventOfCode2018.vcxproj -> D:\Visual studio project\AdventOfCode\Advent-of-Code\AdventOfCode2018\Debug\AdventOfCode2018.exe
