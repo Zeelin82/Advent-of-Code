@@ -36,6 +36,9 @@
     <ClInclude Include="FirstDecember.h">
       <Filter>Header Files\Assignment</Filter>
     </ClInclude>
+    <ClInclude Include="SecondDecember.h">
+      <Filter>Header Files\Assignment</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files\Assets</Filter>
     </ClCompile>
     <ClCompile Include="FirstDecember.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondDecember.cpp">
       <Filter>Source Files\Assignment</Filter>
     </ClCompile>
   </ItemGroup>
