@@ -62,3 +62,53 @@ void Day3::PartOne() {
 	}
 	std::cout << overlap.size();
 }
+
+bool Day3::doClaimOverlap(Claim a, Claim b) {
+	Point aTopLeft = { a.getX(), a.getY() };
+	Point aBottomRight = { a.getX() + a.getWidth() - 1, a.getY() + a.getHeight() - 1 };
+	Point bTopLeft = { b.getX(), b.getY() };
+	Point bBottomRight = { b.getX() + b.getWidth() - 1, b.getY() + b.getHeight() - 1 };
+
+	if (aTopLeft.x > bBottomRight.x || bTopLeft.x > aBottomRight.x) {
+		return false;
+	}
+	if (aTopLeft.y > bBottomRight.y || bTopLeft.y > aBottomRight.y) {
+		return false;
+	}
+	return true;
+}
+
+void Day3::PartTwo() {
+	std::ifstream file = FileReader::OpenFile("../Input/Day3.txt");
+	std::string line;
+	std::vector<Claim> claims;
+	std::map<std::string, int> input;
+
+	if (file.is_open()) {
+		while (std::getline(file, line)) {
+			input = split(line);
+			Claim claim = { input["id"], input["x"], input["y"], input["width"], input["height"] };
+			claims.push_back(claim);
+		}
+		file.close();
+	}
+	Claim claim;
+	int i = 0;
+	bool found = false;
+	while (!found && i < claims.size()) {
+		int overlap = 0;
+		for (int j = 0; j < claims.size(); j++) {
+			if (claims[i].getId() != claims[j].getId()) {
+				if (doClaimOverlap(claims[i], claims[j])) {
+					overlap++;
+				}
+			}
+		}
+		if (overlap == 0) {
+			claim = claims[i];
+			found = true;
+		}
+		i++;
+	}
+	std::cout << i << " " << claim.getId();
+}

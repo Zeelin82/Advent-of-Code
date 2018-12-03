@@ -1,18 +1,18 @@
 #include "pch.h"
-#include "SecondDecember.h"
+#include "Day2.h"
 
 
-SecondDecember::SecondDecember()
+Day2::Day2()
 {
 }
 
 
-SecondDecember::~SecondDecember()
+Day2::~Day2()
 {
 }
 
-void SecondDecember::PartOne() {
-	std::ifstream file = FileReader::OpenFile("../SecondDecember/SecondDecember.txt");
+void Day2::PartOne() {
+	std::ifstream file = FileReader::OpenFile("../Input/Day2.txt");
 	int twoTimes = 0;
 	int ThreeTimes = 0;
 	std::string line;
@@ -48,8 +48,8 @@ void SecondDecember::PartOne() {
 	std::cout << twoTimes * ThreeTimes;
 }
 
-void SecondDecember::PartTwo() {
-	std::ifstream file = FileReader::OpenFile("../SecondDecember/SecondDecember.txt");
+void Day2::PartTwo() {
+	std::ifstream file = FileReader::OpenFile("../Input/Day2.txt");
 	std::string line;
 	std::list<std::string> boxes;
 	if (file.is_open()) {

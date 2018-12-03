@@ -1,18 +1,18 @@
 #include "pch.h"
-#include "FirstDecember.h"
+#include "Day1.h"
 
 
-FirstDecember::FirstDecember()
+Day1::Day1()
 {
 }
 
 
-FirstDecember::~FirstDecember()
+Day1::~Day1()
 {
 }
 
-void FirstDecember::PartOne() {
-	std::ifstream file = FileReader::OpenFile("../FirstDecember/FirstDecember.txt");
+void Day1::PartOne() {
+	std::ifstream file = FileReader::OpenFile("../Input/Day1.txt");
 	std::string line = "";
 	int frequency = 0;
 	if (file.is_open()) {
@@ -33,8 +33,8 @@ void FirstDecember::PartOne() {
 	std::cout << frequency;
 }
 
-void FirstDecember::PartTwo() {
-	std::ifstream file = FileReader::OpenFile("../FirstDecember/FirstDecember.txt");
+void Day1::PartTwo() {
+	std::ifstream file = FileReader::OpenFile("../Input/Day1.txt");
 	std::string line = "";
 	int frequency = 0;
 	std::vector<int> frequencyChange;

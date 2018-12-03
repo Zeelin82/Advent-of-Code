@@ -33,13 +33,13 @@
     <ClInclude Include="FileReader.h">
       <Filter>Header Files\Assets</Filter>
     </ClInclude>
-    <ClInclude Include="FirstDecember.h">
-      <Filter>Header Files\Assignment</Filter>
-    </ClInclude>
-    <ClInclude Include="SecondDecember.h">
-      <Filter>Header Files\Assignment</Filter>
-    </ClInclude>
     <ClInclude Include="Day3.h">
+      <Filter>Header Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Day1.h">
+      <Filter>Header Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Day2.h">
       <Filter>Header Files\Assignment</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,13 +53,13 @@
     <ClCompile Include="FileReader.cpp">
       <Filter>Source Files\Assets</Filter>
     </ClCompile>
-    <ClCompile Include="FirstDecember.cpp">
-      <Filter>Source Files\Assignment</Filter>
-    </ClCompile>
-    <ClCompile Include="SecondDecember.cpp">
-      <Filter>Source Files\Assignment</Filter>
-    </ClCompile>
     <ClCompile Include="Day3.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Day1.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Day2.cpp">
       <Filter>Source Files\Assignment</Filter>
     </ClCompile>
   </ItemGroup>

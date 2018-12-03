@@ -5,11 +5,11 @@
 #include <string>
 #include <list>
 #include <iostream>
-class SecondDecember
+class Day2
 {
 public:
-	SecondDecember();
-	~SecondDecember();
+	Day2();
+	~Day2();
 	static void PartOne();
 	static void PartTwo();
 };

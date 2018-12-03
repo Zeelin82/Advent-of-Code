@@ -4,13 +4,13 @@
 #include <string>
 #include <vector>
 #include <set>
-class FirstDecember
+class Day1
 {
 private:
 	void AddToFrequency(int &frequency, int &amount);
 public:
-	FirstDecember();
-	~FirstDecember();
+	Day1();
+	~Day1();
 	static void PartOne();
 	static void PartTwo();
 };
