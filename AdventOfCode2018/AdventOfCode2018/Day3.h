@@ -3,15 +3,17 @@
 #include <string>
 #include <set>
 #include <vector>
-#include <unordered_set>
+#include <map>
 #include <boost/algorithm/string.hpp>
 
 class Day3
 {
+private:
+	static std::map<std::string, int> split(std::string incommingString);
 public:
 	Day3();
 	~Day3();
-	static std::vector<int> split(std::string incommingString);
+
 	static void PartOne();
 };
 
