@@ -26,7 +26,6 @@ public:
 		this->date = std::stoi(lineDate.erase(4, 1).erase(6, 1));
 		this->time = std::stoi(lineTime.erase(2, 1));
 		this->guardEvent = line.substr(19, line.size());
-		//std::cout << lineDate << " " << lineTime << " " << guardEvent;
 	}
 	~GuardEvent() {};
 	int date;
