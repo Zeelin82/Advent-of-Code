@@ -143,6 +143,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Day3.h" />
+    <ClInclude Include="Day4.h" />
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="Day1.h" />
     <ClInclude Include="pch.h" />
@@ -161,6 +163,7 @@
   <ItemGroup>
     <ClCompile Include="AdventOfCode2018.cpp" />
     <ClCompile Include="Day3.cpp" />
+    <ClCompile Include="Day4.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="Day1.cpp" />
     <ClCompile Include="pch.cpp">

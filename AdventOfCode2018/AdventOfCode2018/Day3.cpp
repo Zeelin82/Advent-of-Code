@@ -37,6 +37,8 @@ std::map<std::string, int> Day3::split(std::string incommingString) {
 }
 
 void Day3::PartOne() {
+	auto before = std::chrono::high_resolution_clock::now();
+	
 	std::ifstream file = FileReader::OpenFile("../Input/Day3.txt");
 	std::string line;
 	std::set<std::string> fabric;
@@ -61,6 +63,9 @@ void Day3::PartOne() {
 		file.close();
 	}
 	std::cout << overlap.size();
+	auto after = std::chrono::high_resolution_clock::now();
+	auto delta = std::chrono::duration<double>(after - before);
+	printf("Time taken: %fs \n", delta.count());
 }
 
 bool Day3::doClaimOverlap(Claim a, Claim b) {
@@ -79,6 +84,7 @@ bool Day3::doClaimOverlap(Claim a, Claim b) {
 }
 
 void Day3::PartTwo() {
+	auto before = std::chrono::high_resolution_clock::now();
 	std::ifstream file = FileReader::OpenFile("../Input/Day3.txt");
 	std::string line;
 	std::vector<Claim> claims;
@@ -111,4 +117,7 @@ void Day3::PartTwo() {
 		i++;
 	}
 	std::cout << i << " " << claim.getId();
+	auto after = std::chrono::high_resolution_clock::now();
+	auto delta = std::chrono::duration<double>(after - before);
+	printf("Time taken: %fs \n", delta.count());
 }
