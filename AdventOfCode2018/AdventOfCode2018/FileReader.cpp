@@ -19,3 +19,22 @@ std::ifstream FileReader::OpenFile(std::string filePath) {
 	}
 	return inFile;
 }
+
+std::vector<std::string> FileReader::GetFile(std::string filePath) {
+	std::vector<std::string> content;
+	std::ifstream file;
+	file.open(filePath);
+	if (!file) {
+		std::cerr << "unable to open file.";
+	}
+	else {
+		std::string line = "";
+		if (file.is_open()) {
+			while (std::getline(file, line)) {
+				content.push_back(line);
+			}
+			file.close();
+		}
+	}
+	return content;
+}
